@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+    background: url(img/Bleu.jpg);
+    background-size: cover;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+h1 {
+    padding: 15px;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #3171b5;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+  color:  #3171b5;
+  border: 1px solid black;
+  padding: 4px 4px;
+  background: lightgray;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3171b5;
+}
+
+.semi-bold {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.icon {
+    margin: auto 4px auto auto;
+    padding: auto;
+    width: 16px;
+}
+.tab {
+    margin-left: 2em;
+}
+
+ul:not(:first-child) {
+    padding: 10px;
+    padding-left: 75px;
+    background: linear-gradient(to right, #a7d9b4 , white) no-repeat;
+    background-size: 75px;
+}
+
+ol {
+    list-style: none;
+    padding: 10px;
+    background: linear-gradient(to right, #a7d9b4 , white) no-repeat;
+    background-size: 75px;
+}
+
+li {
+    margin: 5px 0px;
+}
+
+dl {
+    padding: 10px;
+    background: linear-gradient(to right, #a7d9b4 , white) no-repeat;
+    background-size: 75px;
+}
+
+dt {
+    padding-left: 10px;
+}
+
+dd{
+    list-style: circle;
+    padding-left: 100px;
+}
+
+/* ------------------------------------------------------------ MAIN ------------------------------------------------------------ */
+
+#main {
+    min-width: auto;
+    max-width: 800px;
+    height: auto;
+    padding: 50px;
+    margin: 50px auto;
+    background: linear-gradient(to bottom, #a7d9b4 , white, white, white, white) no-repeat;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(10, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#identity { grid-area: 1 / 1 / 2 / 2; }
+#photo { grid-area: 1 / 2 / 2 / 3; }
+#entitled { grid-area: 2 / 1 / 3 / 3; }
+#skills { grid-area: 3 / 1 / 4 / 3; }
+#skills_list { grid-area: 4 / 1 / 5 / 3; }
+#experiences { grid-area: 5 / 1 / 6 / 3; }
+#experiences_list { grid-area: 6 / 1 / 7 / 3; }
+#formation { grid-area: 7 / 1 / 8 / 3; }
+#formation_list { grid-area: 8 / 1 / 9 / 3; }
+#informations { grid-area: 9 / 1 / 10 / 3; }
+#informations_list { grid-area: 10 / 1 / 11 / 3; }
+
+/* -------------------- CV --------------------*/
+
+#identity {
+    list-style: none;
+}
+
+#photo {
+    height: 160px;
+    margin: auto;
+    box-shadow: 10px 10px 20px grey;
+    border: 2px solid #3171b5;
+}
+
+#entitled {
+    margin: auto;
+}
+
+#skills_list li {
+    list-style-type: '-';
+    padding-left: 5px;
+}
